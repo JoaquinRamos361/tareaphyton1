@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto es un bot de Discord capaz de recibir imágenes enviadas por los usuarios y clasificarlas automáticamente mediante un modelo de inteligencia artificial entrenado previamente.
+Este proyecto es un bot de Discord que puede recibir imágenes enviadas por los usuarios y clasificarlas automáticamente mediante un modelo de inteligencia artificial entrenado previamente.
 
 El bot utiliza un modelo de aprendizaje automático desarrollado con TensorFlow/Keras (`keras_model.h5`) y un archivo de etiquetas (`labels.txt`) para determinar a qué clase pertenece una imagen.
 
@@ -21,11 +21,13 @@ El modelo `keras_model.h5` contiene la red neuronal entrenada para reconocer las
 
 El archivo `labels.txt` contiene los nombres de las clases que el modelo puede reconocer.
 
-Antes de realizar la predicción, la imagen se convierte al formato RGB, se redimensiona a **224x224 píxeles** y se normalizan sus valores para que puedan ser procesados correctamente por el modelo.
+Antes de realizar la predicción, la imagen se convierte al formato RGB y se normalizan sus valores para que puedan ser procesados correctamente por el modelo.
 
 Finalmente, el bot obtiene la predicción con mayor probabilidad y muestra un mensaje como:
 
 `Class: nombre_de_la_clase | Confidence Score: 95.23%`
+
+Es importante q descargues el archivo llamado "converted_keras"
 
 ## Uso
 
@@ -35,6 +37,7 @@ Para utilizar el bot:
 2. Invitar el bot a un servidor de Discord.
 3. Enviar una imagen en un canal donde el bot tenga permisos.
 4. El bot analizará automáticamente la imagen y responderá con su clasificación.
+5. para que funcione use el comando $check y agregue la imagen.
 
 ## Archivos principales
 
